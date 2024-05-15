@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-primary">
       <Navbar />
-      {/* <Hero/> */}
+      <Hero/>
       <About />
       <Technology />
       <UseCases />

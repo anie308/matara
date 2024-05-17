@@ -14,9 +14,14 @@ function UseCases() {
         </p>
 
         <div className="mt-[40px] grid min-h-[380px] md:grid-cols-3 gap-[40px] text-white w-full lg:w-[70%] 3xl:w-[60%]">
-          <div className="border">loll</div>
-          <div className="border">loll</div>
-          <div className="border">loll</div>
+          <div className="border-[2px] border-[#FFFFFF80] rounded-[10px] p-[10px] flex items-center justify-center">
+            <div>
+              <div className="h-[90px] w-[90px] rounded-full"></div>
+              <p></p>
+            </div>
+          </div>
+          <div className="border-[2px] border-[#FFFFFF80] rounded-[10px] p-[10px]">loll</div>
+          <div className="border-[2px] border-[#FFFFFF80] rounded-[10px] p-[10px]">loll</div>
         </div>
         <div className="flex mt-[60px] flex-col items-center justify-center">
           <p className="font-montserrat font-[600] text-[30px] lg:text-[52px] text-white">

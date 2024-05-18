@@ -28,5 +28,12 @@
   border-image-slice: 1;
 }
 
+.use:hover{
+  background: linear-gradient(to right, #FFFCAB33 , #49FFDE33 );
+  cursor: pointer;
+  transition: all ease-in;
+
+}
+
 
             

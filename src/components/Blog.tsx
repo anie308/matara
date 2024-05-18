@@ -1,3 +1,8 @@
+import mtthumb from '@/assets/svg/mtthumb.svg'
+import jthumb from '@/assets/svg/jthumb.svg'
+import lthumb from '@/assets/svg/lthumb.svg'
+import Image from 'next/image';
+
 function Blog() {
   return (
     <div className="bg-primary flex flex-col items-center justify-center mt-[40px] p-[50px_20px] lg:p-[50px]">
@@ -10,7 +15,9 @@ function Blog() {
 
       <div className="mt-[40px] grid min-h-[380px] md:grid-cols-3 gap-[40px] text-white w-full lg:w-[75%]">
         <div className="bg-[#D9D9D90A] bcard p-[15px] ">
-          <div className="h-[200px]  w-full border rounded-[10px]"></div>
+          <div className="h-[250px] overflow-hidden w-full border rounded-[10px]">
+            <Image src={mtthumb} alt='thumbnail' className='h-full w-full object-cover' />
+          </div>
           <div className="mt-[20px]">
             <p className="text-secondary font-inter text-[16px]">Blog</p>
             <p className="text-white font-montserrat font-[600] text-[20px]">
@@ -22,7 +29,9 @@ function Blog() {
           </div>
         </div>
         <div className="bg-[#D9D9D90A] bcard p-[15px]">
-          <div className="h-[200px] w-full border rounded-[10px]"></div>
+        <div className="h-[250px] overflow-hidden w-full border rounded-[10px]">
+            <Image src={lthumb} alt='thumbnail' className='h-full w-full object-cover' />
+          </div>
           <div className="mt-[20px]">
             <p className="text-secondary font-inter text-[16px]">Blog</p>
             <p className="text-white font-montserrat font-[600] text-[20px]">
@@ -34,7 +43,9 @@ function Blog() {
           </div>
         </div>
         <div className="bg-[#D9D9D90A] bcard p-[15px]">
-          <div className="h-[200px] w-full border rounded-[10px]"></div>
+        <div className="h-[250px] overflow-hidden w-full border rounded-[10px]">
+            <Image src={jthumb} alt='thumbnail' className='h-full w-full object-cover' />
+          </div>
           <div className="mt-[20px]">
             <p className="text-secondary font-inter text-[16px]">Blog</p>
             <p className="text-white font-montserrat font-[600] text-[20px]">

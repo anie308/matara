@@ -20,14 +20,14 @@ function BackedBy() {
           ecosystem.
         </p>
 
-        <div className="mt-[40px] flex flex-row lg:justify-between w-full flex-wrap gap-[10px]">
-          <Image className="h-[32px] lg:h-full" src={mfltd} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo3} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo4} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo5} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo6} alt="mfltd" />
-          <Image className="h-[32px] lg:h-full" src={mlogo7} alt="mfltd" />
+        <div className="mt-[40px] flex flex-row lg:justify-between w-full flex-wrap gap-[20px]">
+          <Image className="h-[35px] lg:h-full w-fit" src={mfltd} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo3} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo4} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo5} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo6} alt="mfltd" />
+          <Image className="h-[32px] lg:h-full w-fit" src={mlogo7} alt="mfltd" />
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import About from "@/components/About";
 import BackedBy from "@/components/BackedBy";
 import Blog from "@/components/Blog";
 import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Technology from "@/components/Technology";
@@ -18,6 +19,7 @@ export default function Home() {
       <BackedBy />
       <Blog />
       <FAQs />
+      <Footer/>
     </div>
   );
 }

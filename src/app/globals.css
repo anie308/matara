@@ -14,6 +14,9 @@
 .gbtn{
   background: linear-gradient(to right, #FFFCAB , #49FFDE );
 }
+.footerbg{
+  background: linear-gradient(to right, #0F1B2314 , #FFFFFF13 );
+}
 .gtext{
   background: linear-gradient(to right, #FFFCAB , #0A161E );
   background-clip: text;

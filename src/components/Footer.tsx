@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { CiShare1 } from "react-icons/ci";
 import { FaTelegramPlane } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import { SlGlobe } from "react-icons/sl";
 
 function Footer() {
   return (
@@ -74,8 +75,9 @@ function Footer() {
               </a>
             ))}
           </div>
-          <button className="border-[2px] p-[5px_25px] rounded-[6px] border-white">
-            <p className="text-white font-inter">ENG</p>
+          <button className="flex items-center  space-x-[8px] border-[2px] p-[5px_20px] rounded-[6px] border-white">
+            <p className="text-white font-inter text-[18px]">ENG</p>
+            <SlGlobe className="text-white text-[20px]" />
           </button>
         </div>
         <hr className="text-white" />

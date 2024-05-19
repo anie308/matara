@@ -6,6 +6,9 @@ import mlogo from "@/assets/svg/mmlogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
+import { SlGlobe } from "react-icons/sl";
+
+
 
 function Navbar() {
     const [show, setShow] = useState(false);
@@ -37,10 +40,21 @@ function Navbar() {
               show ? "left-0" : "left-[-100%]"
             } lg:hidden fixed top-0 h-screen bg-primary w-[100%] p-[20px] transition-all`}
           >
-            <div className="w-full justify-end flex" onClick={() => setShow(!show)}>loll</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-            doloribus quis pariatur qui ipsum fugiat inventore molestiae voluptate
-            magni ullam! Eaque illum vel fuga quod animi! Quod eum laborum nulla.
+            <div className=" w-full justify-end flex" onClick={() => setShow(!show)}>
+              <FiPlus className="text-[35px] rotate-45"/>
+            </div>
+            <div className="flex-col flex items-start space-y-[20px]">
+            {links.map((link, index) => (
+              <div
+              onClick={() => setShow(!show)}
+                key={index}
+               
+                className="text-white font-[400]  font-inter hover:text-secondary transition-colors text-[20px]"
+              >
+                {link.title}
+              </div>
+            ))}
+          </div>
           </div>
           <div className="hidden lg:flex items-center mr-[-3%]">
             {links.map((link, index) => (
@@ -53,12 +67,13 @@ function Navbar() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex items-center space-x-[10px]">
+          <div className="hidden lg:flex items-center space-x-[8px]">
             <button className="gbtn p-[6px_20px] font-[600] rounded-[5px] text-black font-inter">
               Docs
             </button>
-            <button className="border-[2px] p-[5px_25px] rounded-[6px] border-secondary">
-              <p className="text-secondary font-inter">ENG</p>
+            <button className="flex items-center space-x-[10px] border-[2px] p-[5px_20px] rounded-[6px] border-secondary">
+              <p className="text-secondary font-inter text-[16px]">ENG</p>
+              <SlGlobe className="text-secondary text-[20px]" />
             </button>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import logo from "@/assets/svg/mlogo.svg";
+import mlogo from "@/assets/svg/mmlogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
@@ -14,7 +15,8 @@ function Navbar() {
             <div className=" text-white  md:p-[15px_50px] justify-between flex items-center xl:container w-full">
           <div className="w-full lg:w-fit items-center justify-between lg:justify-start flex p-[10px] lg:p-0">
             <Link href="/">
-              <Image src={logo} alt="logo" className="h-[50px] lg:min-h-[60px] w-[50px] lg:min-w-[60px]" />
+              <Image src={logo} alt="logo" className="hidden lg:block h-[70px] w-[70px]" />
+              <Image src={mlogo} alt="logo" className="lg:hidden" />
             </Link>
             <div className="flex items-center space-x-[10px] lg:hidden">
               <button className="border-[2px] p-[5px_25px] rounded-[6px] border-secondary">

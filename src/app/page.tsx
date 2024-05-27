@@ -5,6 +5,7 @@ import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import RoadMap from "@/components/RoadMap";
 import Technology from "@/components/Technology";
 import UseCases from "@/components/UseCases";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Technology />
       <UseCases />
       <BackedBy />
+      <RoadMap/>
       <Blog />
       <FAQs />
       <Footer/>

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import roadmap from '@/assets/svg/mroadmap.svg'
+import roadmap from '@/assets/svg/mroad.svg'
 function RoadMap() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container p-[50px_20px] md:p-[50px]">
       <h2 className="text-4xl font-bold text-center text-white mb-8">
         Roadmap
       </h2>
@@ -11,7 +11,7 @@ function RoadMap() {
         Track our progress and upcoming milestones
       </p>
       <div className=" w-full flex items-center justify-center">
-        {/* <Image src={roadmap} alt="" /> */}
+        <Image src={roadmap} alt="" />
       </div>
     </div>
   );

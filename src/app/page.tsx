@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import RoadMap from "@/components/RoadMap";
 import Technology from "@/components/Technology";
+import Tokenomics from "@/components/Tokenomics";
 import UseCases from "@/components/UseCases";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Technology />
       <UseCases />
       <BackedBy />
+      <Tokenomics />
       <RoadMap/>
       <Blog />
       <FAQs />

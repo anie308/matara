@@ -7,12 +7,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
 import { SlGlobe } from "react-icons/sl";
+import Translate from "./Translate";
 
 function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="bg-primary w-full flex items-center justify-center sticky top-0 z-40">
+    <div className="bg-[#06131b] w-full flex items-center justify-center sticky top-0 z-40 ">
       <div className=" text-white  md:p-[15px_50px] justify-between flex items-center xl:container w-full">
         <div className="w-full lg:w-fit items-center justify-between lg:justify-start flex p-[10px] lg:p-0">
           <Link href="/">
@@ -24,11 +25,13 @@ function Navbar() {
             <Image src={mlogo} alt="logo" className="lg:hidden" />
           </Link>
           <div className="flex items-center space-x-[10px] lg:hidden">
-            <button className="border-[2px] p-[5px_25px] rounded-[6px] border-secondary">
+            {/* <button className="border-[2px] p-[5px_25px] rounded-[6px] border-secondary">
               <p className="text-secondary text-[12px] lg:text-[16px] font-inter">
                 ENG
               </p>
-            </button>
+            </button> */}
+            <Translate />
+
             <div
               onClick={() => setShow(!show)}
               className="w-[25px] lg:w-[30px] h-[20px] lg:h-[28px] flex flex-col justify-between items-center"
@@ -77,10 +80,11 @@ function Navbar() {
           <button className="gbtn p-[6px_20px] font-[600] rounded-[5px] text-black font-inter">
             Docs
           </button>
-          <button className="flex items-center space-x-[10px] border-[2px] p-[5px_20px] rounded-[6px] border-secondary">
+          <Translate />
+          {/* <button className="flex items-center space-x-[10px] border-[2px] p-[5px_20px] rounded-[6px] border-secondary">
             <p className="text-secondary font-inter text-[16px]">ENG</p>
             <SlGlobe className="text-secondary text-[20px]" />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

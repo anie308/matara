@@ -6,11 +6,13 @@ import mlogo from "@/assets/svg/mmlogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPlus } from "react-icons/fi";
-import { SlGlobe } from "react-icons/sl";
 import Translate from "./Translate";
+import { useTranslations } from "next-intl";
 
 function Navbar() {
   const [show, setShow] = useState(false);
+  const t = useTranslations('Index')
+
 
   return (
     <div className="bg-[#06131b] w-full flex items-center justify-center sticky top-0 z-40 ">
@@ -25,13 +27,7 @@ function Navbar() {
             <Image src={mlogo} alt="logo" className="lg:hidden" />
           </Link>
           <div className="flex items-center space-x-[10px] lg:hidden">
-            {/* <button className="border-[2px] p-[5px_25px] rounded-[6px] border-secondary">
-              <p className="text-secondary text-[12px] lg:text-[16px] font-inter">
-                ENG
-              </p>
-            </button> */}
             <Translate />
-
             <div
               onClick={() => setShow(!show)}
               className="w-[25px] lg:w-[30px] h-[20px] lg:h-[28px] flex flex-col justify-between items-center"
@@ -43,9 +39,8 @@ function Navbar() {
           </div>
         </div>
         <div
-          className={`${
-            show ? "left-0" : "left-[-100%]"
-          } lg:hidden fixed top-0 h-screen bg-primary w-[100%] p-[20px] transition-all`}
+          className={`${show ? "left-0" : "left-[-100%]"
+            } lg:hidden fixed top-0 h-screen bg-primary w-[100%] p-[20px] transition-all`}
         >
           <div
             className=" w-full justify-end flex"

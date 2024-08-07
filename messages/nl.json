@@ -1,5 +1,11 @@
 {
     "Index":{
+        "navHome": "Home",
+        "navAbout": "Over",
+        "navContact": "Contact",
+        "navTokenomics": "Tokenomics",
+        "navRoadmap": "Roadmap",
+        "navBlog": "Blog",
         "heroTitle": "Welkom in Matara waar hoop leeft",
         "heroSubtitle": "Bij Matara geloven we in de kracht van doelgerichtheid. Onze missie is om individuen in staat te stellen hun ware essentie te ontdekken en met duidelijkheid en richting door het leven te navigeren.",
         "heroButton": "Wit papier",

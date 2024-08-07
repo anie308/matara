@@ -1,5 +1,11 @@
 {
     "Index":{
+        "navHome": "Inicio",
+        "navAbout": "Acerca de",
+        "navContact": "Contacto",
+        "navTokenomics" : "Tokenomics",
+        "navRoadmap" : "Hoja de ruta",
+        "navBlog" : "Blog",
         "heroTitle": "Bienvenido a Matara, donde vive la esperanza",
         "heroSubtitle": "En Matara creemos en el poder del propósito. Nuestra misión es capacitar a las personas para que descubran su verdadera esencia y naveguen por la vida con claridad y dirección.",
         "heroButton": "Papel blanco",

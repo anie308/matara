@@ -1,4 +1,4 @@
-
+import { NextIntlClientProvider } from 'next-intl';
 
 
 export default function RootLayout({
@@ -7,6 +7,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        children
+        <NextIntlClientProvider>
+            {children}
+        </NextIntlClientProvider>
+        
     );
 }

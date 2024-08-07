@@ -1,5 +1,11 @@
 {
     "Index":{
+        "navHome": "Home",
+        "navAbout": "About",
+        "navContact": "Contact",
+        "navTokenomics": "Tokenomics",
+        "navRoadmap": "Roadmap",
+        "navBlog": "Blog",
         "heroTitle": "Welcome to Matara Where Hope Lives",
         "heroSubtitle": "At Matara, we believe in the power of purpose. Our mission is to empower individuals to discover their true essence and navigate life with clarity and direction.",
         "heroButton": "Whitepaper",
